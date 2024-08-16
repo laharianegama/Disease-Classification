@@ -202,3 +202,140 @@ Traceback (most recent call last):
     raise IOError(
 OSError: No file or directory found at model\model.h5
 [2024-08-15 21:55:27,685: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 21:55:27] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-15 22:33:04,585: INFO: stage_03_model_training: *******************]
+[2024-08-15 22:33:04,586: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-08-15 22:33:04,589: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 22:33:04,590: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 22:33:04,591: INFO: common: created directory at: artifacts]
+[2024-08-15 22:33:04,592: INFO: common: created directory at: artifacts\training]
+[2024-08-15 23:05:41,387: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-08-15 23:06:42,175: INFO: stage_04_model_evaluation: *******************]
+[2024-08-15 23:06:42,175: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-08-15 23:06:42,177: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-15 23:06:42,178: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-15 23:06:42,179: INFO: common: created directory at: artifacts]
+[2024-08-15 23:16:26,937: INFO: common: json file saved at: scores.json]
+[2024-08-15 23:16:26,940: INFO: common: json file saved at: scores.json]
+[2024-08-15 23:16:26,942: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-08-15 23:19:25,939: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.154:8080]
+[2024-08-15 23:19:25,940: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-08-15 23:19:32,041: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:19:32] "GET / HTTP/1.1" 200 -]
+[2024-08-15 23:19:46,828: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\src\cnnClassifier\pipeline\prediction.py", line 15, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-08-15 23:19:46,851: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:19:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-15 23:22:47,849: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:22:47] "GET / HTTP/1.1" 200 -]
+[2024-08-15 23:22:56,359: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\src\cnnClassifier\pipeline\prediction.py", line 15, in predict
+    model = load_model(os.path.join("artifacts/training", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-08-15 23:22:56,367: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:22:56] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-15 23:23:20,549: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.154:8080]
+[2024-08-15 23:23:20,551: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-08-15 23:23:25,571: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:23:25] "GET / HTTP/1.1" 200 -]
+[2024-08-15 23:23:33,538: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\venv\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lanegama\Disease-Classification\src\cnnClassifier\pipeline\prediction.py", line 18, in predict
+    test_image = image.load_img(imagename, target_size = (224,224))
+                 ^^^^^^^^^^^^^^
+AttributeError: module 'keras.preprocessing.image' has no attribute 'load_img'
+[2024-08-15 23:23:33,543: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:23:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-15 23:29:02,508: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.154:8080]
+[2024-08-15 23:29:02,509: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-08-15 23:29:07,518: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:29:07] "GET / HTTP/1.1" 200 -]
+[2024-08-15 23:29:16,390: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:29:16] "POST /predict HTTP/1.1" 200 -]
