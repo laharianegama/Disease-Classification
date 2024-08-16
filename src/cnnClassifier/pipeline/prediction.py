@@ -11,7 +11,7 @@ class PredictionPipeline:
         self.filename =filename
   
     def predict(self):
-        # load model
+        # load model #MODIFY THIS TO USE "artifacts/training","model.h5"
         model = load_model(os.path.join("model", "model.h5"))
 
         imagename = self.filename
