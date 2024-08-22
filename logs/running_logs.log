@@ -339,3 +339,28 @@ AttributeError: module 'keras.preprocessing.image' has no attribute 'load_img'
 [2024-08-15 23:29:02,509: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2024-08-15 23:29:07,518: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:29:07] "GET / HTTP/1.1" 200 -]
 [2024-08-15 23:29:16,390: INFO: _internal: 127.0.0.1 - - [15/Aug/2024 23:29:16] "POST /predict HTTP/1.1" 200 -]
+[2024-08-20 21:25:38,476: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-20 21:25:38,484: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-20 21:25:38,487: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-20 21:25:38,488: INFO: common: created directory at: artifacts]
+[2024-08-20 21:25:38,489: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-20 21:25:38,490: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1b-DhjuZTym5kjwC3vewDOO7nHUI2EBnH/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-08-20 21:25:58,355: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1b-DhjuZTym5kjwC3vewDOO7nHUI2EBnH/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-08-20 21:26:24,106: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-20 21:26:24,106: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-08-20 21:26:24,111: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-20 21:26:24,115: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-20 21:26:24,116: INFO: common: created directory at: artifacts]
+[2024-08-20 21:26:24,117: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-08-20 21:26:25,715: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-20 21:26:26,267: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-20 21:26:26,268: INFO: main: *******************]
+[2024-08-20 21:26:26,269: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-08-20 21:26:26,272: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-20 21:26:26,276: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-20 21:26:26,277: INFO: common: created directory at: artifacts]
+[2024-08-20 21:26:26,278: INFO: common: created directory at: artifacts\training]
