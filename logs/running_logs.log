@@ -373,3 +373,13 @@ x==========x]
 [2024-08-21 22:57:48,590: INFO: _internal: 127.0.0.1 - - [21/Aug/2024 22:57:48] "POST /predict HTTP/1.1" 200 -]
 [2024-08-21 22:58:04,969: INFO: _internal: 127.0.0.1 - - [21/Aug/2024 22:58:04] "POST /predict HTTP/1.1" 200 -]
 [2024-08-21 22:58:23,454: INFO: _internal: 127.0.0.1 - - [21/Aug/2024 22:58:23] "POST /predict HTTP/1.1" 200 -]
+[2024-08-28 20:55:55,370: INFO: stage_04_model_evaluation: *******************]
+[2024-08-28 20:55:55,371: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-08-28 20:55:55,372: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 20:55:55,374: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 20:55:55,374: INFO: common: created directory at: artifacts]
+[2024-08-28 21:04:10,342: INFO: common: json file saved at: scores.json]
+[2024-08-28 21:04:10,343: INFO: common: json file saved at: scores.json]
+[2024-08-28 21:04:10,343: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
